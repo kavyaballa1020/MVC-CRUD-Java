@@ -34,7 +34,6 @@ public class RegisterDao {
             e.printStackTrace();
             return "Database error: " + e.getMessage();
         } finally {
-            // Ensure resources are closed
             try {
                 if (preparedStatement != null) preparedStatement.close();
                 if (con != null) con.close();
